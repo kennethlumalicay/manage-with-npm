@@ -1,0 +1,93 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\kenneth\\Documents\\GitHub\\manage-with-npm\\manage-with-npm',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\kenneth\AppData\Roaming\npm-cache\@kennethlumalicay\manage-with-npm\1.0.0\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Users\\kenneth\\AppData\\Roaming\\npm-cache\\@kennethlumalicay\\manage-with-npm\\1.0.0\\package.tgz',
+9 verbose tar pack   'C:\\Users\\kenneth\\Documents\\GitHub\\manage-with-npm\\manage-with-npm' ]
+10 verbose tarball C:\Users\kenneth\AppData\Roaming\npm-cache\@kennethlumalicay\manage-with-npm\1.0.0\package.tgz
+11 verbose folder C:\Users\kenneth\Documents\GitHub\manage-with-npm\manage-with-npm
+12 info prepublish @kennethlumalicay/manage-with-npm@1.0.0
+13 verbose addLocalTarball adding from inside cache C:\Users\kenneth\AppData\Roaming\npm-cache\@kennethlumalicay\manage-with-npm\1.0.0\package.tgz
+14 silly cache afterAdd @kennethlumalicay/manage-with-npm@1.0.0
+15 verbose afterAdd C:\Users\kenneth\AppData\Roaming\npm-cache\@kennethlumalicay\manage-with-npm\1.0.0\package\package.json not in flight; writing
+16 verbose afterAdd C:\Users\kenneth\AppData\Roaming\npm-cache\@kennethlumalicay\manage-with-npm\1.0.0\package\package.json written
+17 silly publish { name: '@kennethlumalicay/manage-with-npm',
+17 silly publish   version: '1.0.0',
+17 silly publish   main: 'index.js',
+17 silly publish   scripts: { test: 'node test.js' },
+17 silly publish   author: '',
+17 silly publish   license: 'ISC',
+17 silly publish   description: 'few words in it',
+17 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+17 silly publish   devDependencies: {},
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/kennethlumalicay/manage-with-npm.git' },
+17 silly publish   bugs: { url: 'https://github.com/kennethlumalicay/manage-with-npm/issues' },
+17 silly publish   homepage: 'https://github.com/kennethlumalicay/manage-with-npm#readme',
+17 silly publish   readme: 'few words in it',
+17 silly publish   readmeFilename: 'readme',
+17 silly publish   gitHead: '45d4f66d5e02fc627bc2473cf70530784bb22104',
+17 silly publish   _id: '@kennethlumalicay/manage-with-npm@1.0.0',
+17 silly publish   _shasum: 'b4d079beba6fb1f6093d2e96a4689da47c843942',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name @kennethlumalicay/manage-with-npm
+20 silly mapToRegistry scope (from package name) @kennethlumalicay
+21 verbose mapToRegistry no registry URL found in name for scope @kennethlumalicay
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry http://localhost:15443/
+24 silly mapToRegistry uri http://localhost:15443/@kennethlumalicay%2fmanage-with-npm
+25 verbose publish registryBase http://localhost:15443/
+26 silly publish uploading C:\Users\kenneth\AppData\Roaming\npm-cache\@kennethlumalicay\manage-with-npm\1.0.0\package.tgz
+27 verbose request uri http://localhost:15443/@kennethlumalicay%2fmanage-with-npm
+28 verbose request sending authorization for write operation
+29 info attempt registry request try #1 at 8:24:37 PM
+30 verbose request id f916e8d8990bec82
+31 http request PUT http://localhost:15443/@kennethlumalicay%2fmanage-with-npm
+32 http 404 http://localhost:15443/@kennethlumalicay%2fmanage-with-npm
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   date: 'Sun, 19 Mar 2017 00:24:38 GMT',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'transfer-encoding': 'chunked' }
+34 verbose request invalidating C:\Users\kenneth\AppData\Roaming\npm-cache\localhost_15443\_40kennethlumalicay_252fmanage-with-npm on PUT
+35 error publish Failed PUT 404
+36 verbose stack Error: missing : @kennethlumalicay/manage-with-npm
+36 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:247:14)
+36 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:170:14)
+36 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:354:22)
+36 verbose stack     at Request.emit (events.js:110:17)
+36 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1207:14)
+36 verbose stack     at Request.emit (events.js:129:20)
+36 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1153:12)
+36 verbose stack     at IncomingMessage.emit (events.js:129:20)
+36 verbose stack     at _stream_readable.js:908:16
+36 verbose stack     at process._tickCallback (node.js:355:11)
+37 verbose statusCode 404
+38 verbose pkgid @kennethlumalicay/manage-with-npm
+39 verbose cwd C:\Users\kenneth\Documents\GitHub\manage-with-npm\manage-with-npm
+40 error Windows_NT 6.3.9600
+41 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+42 error node v0.12.7
+43 error npm  v2.11.3
+44 error code E404
+45 error 404 missing : @kennethlumalicay/manage-with-npm
+45 error 404
+45 error 404 '@kennethlumalicay/manage-with-npm' is not in the npm registry.
+45 error 404 You should bug the author to publish it (or use the name yourself!)
+45 error 404
+45 error 404 Note that you can also install from a
+45 error 404 tarball, folder, http url, or git url.
+46 verbose exit [ 1, true ]

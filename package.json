@@ -1,5 +1,5 @@
 {
-  "name": "@kennethlumalicay/directory",
+  "name": "@kennethlumalicay/manage-with-npm",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,5 +11,13 @@
   "dependencies": {
     "@linclark/pkg": "^1.0.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kennethlumalicay/manage-with-npm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kennethlumalicay/manage-with-npm/issues"
+  },
+  "homepage": "https://github.com/kennethlumalicay/manage-with-npm#readme"
 }
